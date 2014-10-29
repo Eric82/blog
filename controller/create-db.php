@@ -15,9 +15,12 @@
         //this is creating the database file 
         $query = $connection->query("CREATE DATABASE $database");
         //this wants to output a message.
-        if($query){
+        if($query) {
             echo "Successfully created database: " . $database;
         }
+    }
+    else {
+        echo "Database has already exists.";    
     }
     
     $connection->close();
