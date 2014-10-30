@@ -23,4 +23,13 @@
         echo "Database has already exists.";    
     }
     
+    $query = $connection->query("CREATE TABLE posts ("
+            //the not null is like the value of the id and connects with it
+           . "id int(11)NOT NULL AUTO_INCREMENT,"
+           . "title varchar(255) NOT NULL,"
+           . "post text NOT NULL,"
+            //this code tells the table that the primry key is id 
+           . "PRIMARY KEY (id)");        
+            
+    
     $connection->close();
