@@ -16,7 +16,7 @@
         $query = $connection->query("CREATE DATABASE $database");
         //this wants to output a message.
         if($query) {
-            echo "Successfully created database: " . $database;
+            echo "<p>Successfully created database: " . $database . "</p>";
         }
     }
     else {
@@ -29,7 +29,12 @@
            . "title varchar(255) NOT NULL,"
            . "post text NOT NULL,"
             //this code tells the table that the primry key is id 
-           . "PRIMARY KEY (id)");        
-            
+           . "PRIMARY KEY (id))");
     
+    if($query) {
+        echo "Succesfully create table: posts";
+    }    
+    else{
+        echo"<p>$connection->error</p>";
+    }
     $connection->close();
