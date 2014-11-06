@@ -12,5 +12,6 @@
         <label for="post">Post:</label>
         <textarea name="post"></textarea>
     <div>
+        <button type="submit">Submit</button>
     </div>
 </form>
