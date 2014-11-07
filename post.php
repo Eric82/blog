@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-
 <?php
 // here i will require the information in the form.php
     require_once(__DIR__ . "/view/header.php");
