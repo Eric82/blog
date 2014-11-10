@@ -1,10 +1,11 @@
 <?php
 //this code will get information and let us know whats in the table that I made in create-db.php
 // textarea allows me to make as much as sentences as i want to put and do.
+require_once (__DIR__ . "/../model/config.php");
 ?>
 <h1>Create Blog Post</h1>
 
-<form>
+<form method="post" action="<?php echo $path ."controller/create-post.php";?>">
     <div>
         <laber for="title">Title:</laber>
         <input type="text" name="title" />
