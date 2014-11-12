@@ -1,4 +1,5 @@
 <?php
+    //i need this because its trying to connect to the information in the database.
     require_once(__DIR__ . "/../mode/database.php");
 
     $connection = new mysqli($host, $username, $password, $database);
