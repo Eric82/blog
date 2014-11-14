@@ -1,7 +1,7 @@
 <?php
 //this calls and gets the information that is stored in database.php
 //the dir concantinates the path to the file
-    require_once (__DIR__ . "/../model/database.php");
+    require_once (__DIR__ . "/../model/config.php");
     //this finds the code and checks if its there and connects with the server mysqli
     $connection = new mysqli($host, $username, $password);
     //this code checks if the connection was successful.
