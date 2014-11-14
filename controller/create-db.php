@@ -9,7 +9,10 @@
         die("Error:" . $connection->connect_error);
     }
     //this checks if its true or not true and thats why its called $exists
-    $exists = $connection->select_db($database); 
+    $exists = $connection->select_db($database);
+    
+    
+    
     //in this line it checkes if the connection went through and if it successed
     if(!$exists){
         //this is creating the database file 
