@@ -7,4 +7,24 @@ class Database {
     private $username;
     private $password;
     private $database;
-}
+    //this will call a function so that it grabs the information from create-db
+    public function __construct($host, $username, $password, $database) {
+    //this will access the global variables
+        $this->host = $host;
+        $this->username = $username;
+        $this->password = $password;
+        $this->database = $database;
+    }
+    
+    public function openConnection(){
+        
+    }
+    
+    public function closeConnection() {
+        
+    }
+    
+    public function query($string){
+        
+    }
+ }
