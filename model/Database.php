@@ -28,8 +28,12 @@ class Database {
         }
     }
 
+    //close the function that was opened
+    // we also want to call this variable and checks if it works correctly
     public function closeConnection() {
-        
+        if (isset($this->connection)) {
+            $this->connection->close();
+        }
     }
 
     public function query($string) {
