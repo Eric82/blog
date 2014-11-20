@@ -17,6 +17,27 @@ class Database {
         $this->username = $username;
         $this->password = $password;
         $this->database = $database;
+
+        //this finds the code and checks if its there and connects with the server mysqli
+        $this->connection = new mysqli($host, $username, $password);
+        //this code checks if the connection was successful.
+        if ($this->connection->connect_error) {
+            die("Error:" . $this->connection->connect_error);
+        }
+        //this checks if its true or not true and thats why its called $exists
+        $exists = $this->connection->select_db($database);
+
+        //in this line it checkes if the connection went through and if it successed
+        if (!$exists) {
+            //this is creating the database file 
+            $query = $this->connection->query("CREATE DATABASE $database");
+            //this wants to output a message.
+            if ($query) {
+                echo "<p>Successfully created database: " . $database . "</p>";
+            }
+        } else {
+            echo "Database has already exists.";
+        }
     }
 
     public function openConnection() {
@@ -38,11 +59,11 @@ class Database {
 
     public function query($string) {
         $this->openConnection();
-    // this will run the query in the database and use the srting of text.  
+        // this will run the query in the database and use the srting of text.  
         $query = $this->connection->query($string);
-        
+
         $this->closeConnection();
-        
+
         return $query;
     }
 

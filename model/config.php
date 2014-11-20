@@ -1,4 +1,5 @@
 <?php
+    require_once (__DIR__ . "/database.php");
     $path = "/Eric-blog/";
     //this is the information we use to log in phpmyadmin
     $host = "localhost";
