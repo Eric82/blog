@@ -37,7 +37,13 @@ class Database {
     }
 
     public function query($string) {
+        $this->openConnection();
+    // this will run the query in the database and use the srting of text.  
+        $query = $this->connection->query($string);
         
+        $this->closeConnection();
+        
+        return $query;
     }
 
 }
