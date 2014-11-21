@@ -3,7 +3,7 @@
 //the dir concantinates the path to the file
     require_once (__DIR__ . "/../model/config.php");
 
-    $query = $connection->query("CREATE TABLE posts ("
+    $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
             //the not null is like the value of the id and connects with it
            . "id int(11)NOT NULL AUTO_INCREMENT,"
            . "title varchar(255) NOT NULL,"
@@ -15,5 +15,5 @@
         echo "Succesfully create table: posts";
     }    
     else{
-        echo"<p>$connection->error</p>";
+        echo"<p>" . $_SESSION["connection"]->error . "</p>";
     }
