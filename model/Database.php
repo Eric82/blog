@@ -9,6 +9,7 @@ class Database {
     private $username;
     private $password;
     private $database;
+    public $error;
 
     //this will call a function so that it grabs the information from create-db
     public function __construct($host, $username, $password, $database) {
@@ -62,6 +63,10 @@ class Database {
         // this will run the query in the database and use the srting of text.  
         $query = $this->connection->query($string);
 
+        if(!$query){
+            $this->error = $this->connection->error;
+        }
+        
         $this->closeConnection();
 
         return $query;
