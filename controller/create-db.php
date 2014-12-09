@@ -8,6 +8,7 @@
            . "id int(11)NOT NULL AUTO_INCREMENT,"
            . "title varchar(255) NOT NULL,"
            . "post text NOT NULL,"
+           . "DateTime datetime NOT NULL," 
             //this code tells the table that the primry key is id 
            . "PRIMARY KEY (id))");
     
