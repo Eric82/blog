@@ -6,9 +6,10 @@
             <file>file:/C:/xampp/htdocs/Eric-blog/controller/create-db.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/register.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/controller/create-post.php</file>
+            <file>file:/C:/xampp/htdocs/Eric-blog/view/header.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/view/form.php</file>
-            <file>file:/C:/xampp/htdocs/Eric-blog/view/register-form.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/model/Database.php</file>
+            <file>file:/C:/xampp/htdocs/Eric-blog/view/navagation.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/controller/create-user.php</file>
         </group>
     </open-files>
