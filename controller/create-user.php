@@ -8,5 +8,18 @@
     echo $password;
     
     $salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
+    // this will make our password Encrypted
+    $hashedPassword = crypt ($password, $salt);
+    // inserts the information.
+    $query = $_SESSION["connection"]->query("INSERT INTO user SET "
+            . "email = '$email',"
+            . "username = '$username',"
+            . "password = '$hashedPassword',"
+            . "salt = '$salt'");
     
-    echo $salt;
+    if($query) {
+        echo "Successfully created user: $username";
+    }
+    else { 
+        echo "<p>" . $_SESSION["connection"]->error . "</p>";
+    }
