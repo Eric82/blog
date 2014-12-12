@@ -3,26 +3,6 @@ body{
     padding-top:50px;
 }
 
-
-h1 {
-  font-family:'Chango';
-  font-size:50px;  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* set the background image */
-  background:url(http://scotch.io/wp-content/uploads/2014/11/mountain1.jpg);
-  background-position:bottom;
-  background-size:cover;
-
-  /* set the transition speed */
-  transition:2s ease all;
-}
-
-/* handle what happens on hover */
-h1:hover {
-  background-position:top;
-}
 @media only screen and (max-width: 320px) {
     body {
      background: activecaption;   
