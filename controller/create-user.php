@@ -11,7 +11,7 @@
     // this will make our password Encrypted
     $hashedPassword = crypt ($password, $salt);
     // inserts the information.
-    $query = $_SESSION["connection"]->query("INSERT INTO user SET "
+    $query = $_SESSION["connection"]->query("INSERT INTO users SET "
             . "email = '$email',"
             . "username = '$username',"
             . "password = '$hashedPassword',"
