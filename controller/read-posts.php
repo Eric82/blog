@@ -13,5 +13,7 @@
             echo "<p>" . $row['post'] . "</h1>";
             echo "<br/>";
             echo "</div>";
+            echo "<section>" . $row['post'] . "</section>";
+            echo "<section>" . $row['title'] . "</section>";
         }
     }
