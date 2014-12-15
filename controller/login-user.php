@@ -10,6 +10,7 @@
         $row = $query->fetch_array();
         //crypt checks password and checks for uppercase and loswer case
         if($row["password"] === crypt ($password, $row["salt"])) {
+            $_SESSION["authenticated"] = true;
             echo "<p>Log in Successful</p>";
         }
         else{
