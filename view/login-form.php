@@ -1,5 +1,7 @@
 <?php
 require_once (__DIR__ . "/../model/config.php");
+// in line below will help the user log into the webpage.
+//the method will access the information.
 ?>
 
 <h1>Login</h1>
