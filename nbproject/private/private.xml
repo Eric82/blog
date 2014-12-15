@@ -5,10 +5,11 @@
         <group>
             <file>file:/C:/xampp/htdocs/Eric-blog/index.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/view/login-form.php</file>
-            <file>file:/C:/xampp/htdocs/Eric-blog/login.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/controller/login-user.php</file>
-            <file>file:/C:/xampp/htdocs/Eric-blog/post.php</file>
+            <file>file:/C:/xampp/htdocs/Eric-blog/view/form.php</file>
+            <file>file:/C:/xampp/htdocs/Eric-blog/controller/logout-user.php</file>
             <file>file:/C:/xampp/htdocs/Eric-blog/view/register-form.php</file>
+            <file>file:/C:/xampp/htdocs/Eric-blog/controller/login-verify.php</file>
         </group>
     </open-files>
 </project-private>

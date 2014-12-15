@@ -3,12 +3,12 @@
 // textarea allows me to make as much as sentences as i want to put and do.
     require_once (__DIR__ . "/../model/config.php");
     require_once (__DIR__ . "/../controller/login-verify.php");
-    
+//stops users from going into our create posts and going into parts we don't want them to.    
     if(!authenticateUser()){
         header("Location: " . $path . "index.php");
         die();
     } 
-    
+     
 ?>
 <h1>Create Blog Post</h1>
 
