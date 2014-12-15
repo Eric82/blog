@@ -1,7 +1,14 @@
 <?php
 //this code will get information and let us know whats in the table that I made in create-db.php
 // textarea allows me to make as much as sentences as i want to put and do.
-require_once (__DIR__ . "/../model/config.php");
+    require_once (__DIR__ . "/../model/config.php");
+    require_once (__DIR__ . "/../controller/login-verify.php");
+    
+    if(!authenticateUser()){
+        header("Location: " . $path . "index.php");
+        die();
+    } 
+    
 ?>
 <h1>Create Blog Post</h1>
 
